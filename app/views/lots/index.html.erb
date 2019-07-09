@@ -1,1 +1,11 @@
 <h1><%= @lots.inspect %></h1>
+
+<% @lots.each do |lot| %>
+  <div>
+    <h1><%= lot.name %></h1><br />
+    <i><%= lot.address %></i><br />
+    <p><%= lot.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
